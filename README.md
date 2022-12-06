@@ -1,7 +1,6 @@
 # Cloud-based web application for University data
 
-
-# Please use below commands for running the project
+ Please use below commands for running the project
 
 ## To check for any new updates on the EC2 instance. 
 
