@@ -34,7 +34,7 @@ def home():
 
 @app.route("/gotoadd", methods=['GET', 'POST'])
 def gotoadd():
-    return render_template('addstudent.html')
+    return render_template('AddStudent.html')
 
 
 @app.route("/about", methods=['GET', 'POST'])
