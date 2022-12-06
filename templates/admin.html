@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Admin Login</title>
+
+  <script>
+    function validate() {
+      const Username =
+        document.forms["Username"];
+      const password =
+        document.forms["password"];
+
+      if (Username.value != "admin") {
+        window.alert("Incorrect credentials");
+        Username.focus();
+        return false;
+      }
+      if (password.value != "admin") {
+        window.alert("Incorrect credentials");
+        password.focus();
+        return false;
+      }
+    }
+  </script>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <style>
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body,
+    div,
+    form,
+    input,
+    p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 400;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    h3 {
+      text-align: center;
+
+      margin: 12px 0;
+      color: #8ebf42;
+    }
+
+
+    .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    form {
+      width: 100%;
+      padding: 20px;
+    }
+
+    fieldset {
+      border: none;
+      border-top: 1px solid #8ebf42;
+    }
+
+    .account-details {
+        {
+        #display: flex;
+        #
+      }
+
+        {
+        #flex-wrap: wrap;
+        #
+      }
+
+      justify-content: space-between;
+
+    }
+
+    .account-details>div {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .account-details>div,
+    input,
+    label {
+      width: 100%;
+      align-items: center;
+    }
+
+    label {
+      padding: 0 5px;
+      text-align: right;
+      vertical-align: middle;
+    }
+
+    input {
+      padding: 5px;
+      vertical-align: middle;
+    }
+
+    a {
+      display: inline-block;
+      justify-content: center;
+      text-decoration: none;
+      text-align: center;
+      width: 30%;
+      padding: 10px 0;
+      margin: 10px 10px;
+      border-radius: 5px;
+      border: none;
+      background: #aad32f;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    a:hover {
+      background: #82b534;
+    }
+
+
+    button {
+
+      display: flex;
+      justify-content: center;
+      width: 10%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: none;
+      background: #8ebf42;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    button:hover {
+      background: #82b534;
+    }
+
+    @media (min-width: 568px) {
+      .account-details>div {
+        width: 70%;
+      }
+
+      label {
+        width: 40%;
+      }
+
+      input {
+        width: 60%;
+      }
+
+    }
+
+    .topnav a.active {
+      background-color: #6e9a2b;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topnav">
+    <a href="/about">About</a>
+    <a href="/">Home</a>
+    <a class="active" href="/admin">Login</a>
+
+  </div>
+
+  <div class="main-block">
+
+    <form action="/getstudent" onsubmit="validate()" method="POST">
+      <h1>UNIVERSITY STUDENT DATABASE </h1>
+
+      <fieldset></fieldset>
+
+      <h3>Admin Login</h3>
+
+      <div class="account-details">
+        <div><label>Username</label><input type="String" name=adminusername required></div>
+        <div><label>Password</label><input type="password" name=adminpassword required></div>
+
+
+      </div>
+      </fieldset>
+
+
+      <button type="submit">Login</button><br>
+
+      <fieldset>
+
+
+
+      </fieldset>
+    </form>
+
+  </div>
+</body>
+
+</html>

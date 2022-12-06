@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Student Information</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet'
+    type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <style>
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body,
+    div,
+    form,
+    input,
+    p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+    }
+
+    h1 {
+      margin: 0;
+      font-weight: 400;
+    }
+
+    h3 {
+      margin: 12px 0;
+      color: #8ebf42;
+    }
+
+    .main-block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    form {
+      width: 100%;
+      padding: 20px;
+    }
+
+    fieldset {
+      border: none;
+      border-top: 1px solid #8ebf42;
+    }
+
+    .account-details {
+        {
+        #display: flex;
+        #
+      }
+
+        {
+        #flex-wrap: wrap;
+        #
+      }
+
+      justify-content: space-between;
+
+    }
+
+    .account-details>div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .account-details>div,
+    input,
+    label {
+      width: 100%;
+    }
+
+    label {
+      padding: 0 5px;
+      text-align: right;
+      vertical-align: middle;
+    }
+
+    input {
+      padding: 5px;
+      vertical-align: middle;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+
+      width: 35%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: none;
+      background: #aad32f;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    a:hover {
+      background: #82b534;
+    }
+
+
+    button {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 10px 0;
+      margin: 10px auto;
+      border-radius: 5px;
+      border: none;
+      background: #8ebf42;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    button:hover {
+      background: #82b534;
+    }
+
+    @media (min-width: 568px) {
+      .account-details>div {
+        width: 50%;
+      }
+
+      label {
+        width: 40%;
+      }
+
+      input {
+        width: 60%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-block">
+
+    <form>
+      <h1>Student Information</h1>
+      <fieldset>
+        <legend>
+          <h3>Details</h3>
+        </legend>
+        <div class="account-details">
+
+
+          <label>Net ID: {{ id }} </label><br><br>
+
+          <label>First Name:{{ fname }} </label><br><br>
+
+          <label>Last Name:{{ lname }} </label><br><br>
+
+          <label>Major:{{ major }} </label><br><br>
+
+          <label>Location:{{ location }} </label><br><br>
+
+          <label>Image:<br> <img src="{{ image_url }}" width="250" height="250" /> </label><br><br>
+          <button type="submit" formaction="/getstudent">Reset</button><br>
+
+
+
+
+        </div>
+      </fieldset>
+
+
+
+      <fieldset>
+
+
+        <a href="/about">About Us</a>
+        <a href="/admin">Get Student Information</a>
+
+
+      </fieldset>
+    </form>
+
+  </div>
+</body>
+
+</html>
